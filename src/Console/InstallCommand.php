@@ -211,7 +211,7 @@ class InstallCommand extends Command
             return;
         }
 
-        $remove = ['CONTRIBUTING.md', 'CHANGELOG.md'];
+        $remove = ['CONTRIBUTING.md', 'CHANGELOG.md', 'ISSUE_TEMPLATE.md'];
         foreach ($remove as $file) {
             @unlink(getcwd() . DS . $file);
         }
